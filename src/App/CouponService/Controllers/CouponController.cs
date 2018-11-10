@@ -53,12 +53,12 @@ namespace CouponService.Controllers.Api
             if (string.IsNullOrEmpty(site))
                 return false;
             var website = new IsForSite();
-            if (site == "ceptetamir")
+            if (site == "isForA")
             {
                 website.isForA = true;
                 isValidated = true;
             }
-            if (site == "ceptekoruma")
+            if (site == "isForB")
             {
                 website.isForB = true;
                 isValidated = true;

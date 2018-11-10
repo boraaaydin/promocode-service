@@ -20,31 +20,10 @@ namespace CouponService
         public void ConfigureServices(IServiceCollection services)
         {
             var connString = Configuration.GetConnectionString("Mssql");
-            //var ConnName = Configuration.GetSection("ConnectionStringName").Value;
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connString));
 
             services.AddScoped<ICouponRepository, CouponRepository>();
-
-            //CORS
-            //services.AddCors(options =>
-            //{
-            //    options.AddPolicy("Development",
-            //        builder => builder.WithOrigins("https://localhost:44360", "http://localhost:3356", "http://localhost:3357", "http://localhost:44302",
-            //                                       "https://portal.ceptetamir.com", "https://ceptetamir.com", "https://www.ceptetamir.com",
-            //                                       "https://panel.ceptekoruma.com", "https://ceptekoruma.com", "https://www.ceptekoruma.com")
-            //                            .AllowAnyHeader()
-            //                            .AllowAnyMethod());
-
-            //    options.AddPolicy("Production",
-            //        builder => builder.WithOrigins("https://portal.ceptetamir.com","https://ceptetamir.com", "https://www.ceptetamir.com",
-            //                                       "https://panel.ceptekoruma.com", "https://ceptekoruma.com", "https://www.ceptekoruma.com",
-            //                                       "https://portalceptetamir-stageportalceptetamir.azurewebsites.net",
-            //                                       "http://portalceptetamir-stageportalceptetamir.azurewebsites.net")
-            //                            .AllowAnyHeader()
-            //                            .AllowAnyMethod());
-            //});
-
 
             services.AddMvc();
         }

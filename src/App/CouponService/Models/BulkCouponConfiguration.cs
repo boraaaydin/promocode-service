@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Ceptetamir.Domain.HelperModels
+namespace CouponService.Models
 {
     public class BulkCouponConfiguration
     {
