@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/App/CouponService/bin/Debug/netcoreapp2.1/CouponService.dll",
+            "program": "${workspaceFolder}/src/App/PromocodeService/bin/Debug/netcoreapp2.1/PromocodeService.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/src/App/CouponService",
+            "cwd": "${workspaceFolder}/src/App/PromocodeService",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart",
             "launchBrowser": {

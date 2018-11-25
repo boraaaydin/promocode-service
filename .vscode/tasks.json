@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/src/App/CouponService/CouponService.csproj"
+                "${workspaceFolder}/src/App/PromocodeService/PromocodeService.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
