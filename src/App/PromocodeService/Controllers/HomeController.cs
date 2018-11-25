@@ -8,7 +8,7 @@ namespace PromocodeService.Controllers
     {
         public IActionResult Index()
         {
-            
+            //simple change
             return View();
         }
 
